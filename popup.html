@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Auto Complete</title>
+    <script defer src="options.js" type="module"></script>
+  </head>
+  <body>
+    <h1>AI Auto Complete</h1>
+    <p>
+      Activate the plugin by focusing on a textbox. The plugin will
+      automatically suggest completions for your text.
+    </p>
+    <h1>Settings</h1>
+    <form id="settingsForm">
+      <label for="apiKey">Groq API Key:</label><br />
+      <input type="text" id="apiKey" name="apiKey" /><br />
+      <label for="modelTemp">Model Temperature:</label><br />
+      <input
+        type="number"
+        id="modelTemp"
+        name="modelTemp"
+        min="0"
+        max="2"
+      /><br />
+      <button type="submit" id="save">Save</button>
+    </form>
+  </body>
+</html>
